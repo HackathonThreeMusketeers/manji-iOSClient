@@ -16,6 +16,7 @@
 		0DDE38BB20A6BFA7001E7998 /* manjiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38BA20A6BFA7001E7998 /* manjiUITests.swift */; };
 		0DDE38D820A6C7BD001E7998 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38D620A6C7BD001E7998 /* ApiClient.swift */; };
 		0DDE38D920A6C7BD001E7998 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38D720A6C7BD001E7998 /* Api.swift */; };
+		0DDE38DB20A74FBD001E7998 /* Diary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38DA20A74FBD001E7998 /* Diary.swift */; };
 		1009357754D8662B4B7022BE /* Pods_manji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D49F998D9787473F3433E7 /* Pods_manji.framework */; };
 		5EEED02EE5187BC41861E66D /* Pods_manjiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1763A3712EB48A9106E2B4 /* Pods_manjiTests.framework */; };
 		8F72A87320A6D09A00FC09DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F72A87220A6D09A00FC09DB /* DetailViewController.swift */; };
@@ -62,6 +63,7 @@
 		0DDE38BC20A6BFA7001E7998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DDE38D620A6C7BD001E7998 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		0DDE38D720A6C7BD001E7998 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		0DDE38DA20A74FBD001E7998 /* Diary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diary.swift; sourceTree = "<group>"; };
 		0F1763A3712EB48A9106E2B4 /* Pods_manjiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_manjiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10164D2C73EA16136C992DBB /* Pods-manjiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manjiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-manjiTests/Pods-manjiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		16D49F998D9787473F3433E7 /* Pods_manji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_manji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +186,7 @@
 			children = (
 				0DDE38D620A6C7BD001E7998 /* ApiClient.swift */,
 				0DDE38D720A6C7BD001E7998 /* Api.swift */,
+				0DDE38DA20A74FBD001E7998 /* Diary.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DDE389D20A6BFA6001E7998 /* ViewController.swift in Sources */,
+				0DDE38DB20A74FBD001E7998 /* Diary.swift in Sources */,
 				0DDE389B20A6BFA6001E7998 /* AppDelegate.swift in Sources */,
 				8F72A87320A6D09A00FC09DB /* DetailViewController.swift in Sources */,
 				8F72A87520A6D96E00FC09DB /* NewViewController.swift in Sources */,
@@ -636,13 +640,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 355CZ5YAD5;
+				DEVELOPMENT_TEAM = H543XE4ASB;
 				INFOPLIST_FILE = manji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.manji.manji;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -655,13 +659,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 355CZ5YAD5;
+				DEVELOPMENT_TEAM = H543XE4ASB;
 				INFOPLIST_FILE = manji/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.manji.manji;
+				PRODUCT_BUNDLE_IDENTIFIER = com.manji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
