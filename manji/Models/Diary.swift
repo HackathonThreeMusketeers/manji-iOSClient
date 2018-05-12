@@ -42,3 +42,14 @@ struct Diary: Mappable {
         return localDate!
     }
 }
+
+struct ResultEsa: Mappable {
+    
+    var result: String = ""
+    
+    init?(map: Map) { }
+    
+    mutating func mapping(map: Map) {
+        result    <- map["name"]
+    }
+}
