@@ -14,6 +14,8 @@
 		0DDE38A520A6BFA7001E7998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DDE38A320A6BFA7001E7998 /* LaunchScreen.storyboard */; };
 		0DDE38B020A6BFA7001E7998 /* manjiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38AF20A6BFA7001E7998 /* manjiTests.swift */; };
 		0DDE38BB20A6BFA7001E7998 /* manjiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38BA20A6BFA7001E7998 /* manjiUITests.swift */; };
+		0DDE38D820A6C7BD001E7998 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38D620A6C7BD001E7998 /* ApiClient.swift */; };
+		0DDE38D920A6C7BD001E7998 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38D720A6C7BD001E7998 /* Api.swift */; };
 		1009357754D8662B4B7022BE /* Pods_manji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D49F998D9787473F3433E7 /* Pods_manji.framework */; };
 		5EEED02EE5187BC41861E66D /* Pods_manjiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1763A3712EB48A9106E2B4 /* Pods_manjiTests.framework */; };
 		C38B255259268D5530624D0A /* Pods_manjiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2A8DD32ECA1F49BE03B5E0 /* Pods_manjiUITests.framework */; };
@@ -50,6 +52,8 @@
 		0DDE38B620A6BFA7001E7998 /* manjiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = manjiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DDE38BA20A6BFA7001E7998 /* manjiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manjiUITests.swift; sourceTree = "<group>"; };
 		0DDE38BC20A6BFA7001E7998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DDE38D620A6C7BD001E7998 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		0DDE38D720A6C7BD001E7998 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		0F1763A3712EB48A9106E2B4 /* Pods_manjiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_manjiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10164D2C73EA16136C992DBB /* Pods-manjiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manjiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-manjiTests/Pods-manjiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		16D49F998D9787473F3433E7 /* Pods_manji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_manji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,6 +118,7 @@
 		0DDE389920A6BFA6001E7998 /* manji */ = {
 			isa = PBXGroup;
 			children = (
+				0DDE38D520A6C7BD001E7998 /* Models */,
 				0DDE38C920A6C4CB001E7998 /* Views */,
 				0DDE389A20A6BFA6001E7998 /* AppDelegate.swift */,
 				0DDE389E20A6BFA6001E7998 /* Main.storyboard */,
@@ -148,6 +153,15 @@
 				0DDE389C20A6BFA6001E7998 /* ViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0DDE38D520A6C7BD001E7998 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0DDE38D620A6C7BD001E7998 /* ApiClient.swift */,
+				0DDE38D720A6C7BD001E7998 /* Api.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3C10A7C4A524CBB68430758A /* Pods */ = {
@@ -414,6 +428,8 @@
 			files = (
 				0DDE389D20A6BFA6001E7998 /* ViewController.swift in Sources */,
 				0DDE389B20A6BFA6001E7998 /* AppDelegate.swift in Sources */,
+				0DDE38D920A6C7BD001E7998 /* Api.swift in Sources */,
+				0DDE38D820A6C7BD001E7998 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
