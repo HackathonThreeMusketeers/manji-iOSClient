@@ -72,9 +72,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.75686274509999996" green="0.47058823529999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="ごはん" id="gTA-jd-BaV">
+                                    <navigationItem id="gTA-jd-BaV">
+                                        <nil key="title"/>
                                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="Nhq-18-xnp">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bhB-6e-FqT">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bhB-6e-FqT">
                                                 <rect key="frame" x="16" y="0.0" width="36" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="btn_05.png">
@@ -85,8 +86,13 @@
                                                 </connections>
                                             </button>
                                         </barButtonItem>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LPi-P3-miR">
+                                            <rect key="frame" x="87" y="0.0" width="201" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="img_005.png"/>
+                                        </button>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="K7N-2t-WCb">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xc0-0u-ctM">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xc0-0u-ctM">
                                                 <rect key="frame" x="322" y="0.0" width="37" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="btn_04 (1).png">
@@ -100,6 +106,21 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bS-Bv-akE">
+                                <rect key="frame" x="74" y="135" width="227" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="img_08.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDx-iv-HPB">
+                                <rect key="frame" x="116" y="318" width="143" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="img_04.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSQ-jC-wMv">
+                                <rect key="frame" x="62" y="439" width="250" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="img_06.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lJ1-re-9If"/>
@@ -107,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mqu-l7-vmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1222" y="838"/>
+            <point key="canvasLocation" x="1221.5999999999999" y="837.93103448275872"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="4Pr-rg-Iuk">
@@ -122,7 +143,8 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.75686274509999996" green="0.47058823529999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
-                                    <navigationItem title="きろく" id="7Nw-ub-L7w">
+                                    <navigationItem id="7Nw-ub-L7w">
+                                        <nil key="title"/>
                                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="I3U-nC-4A1">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="tJj-Rg-P3j">
                                                 <rect key="frame" x="16" y="0.0" width="36" height="44"/>
@@ -134,6 +156,11 @@
                                                 </connections>
                                             </button>
                                         </barButtonItem>
+                                        <button key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xzr-ev-7Bh">
+                                            <rect key="frame" x="114" y="0.0" width="147" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" image="img_003.png"/>
+                                        </button>
                                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="YhJ-jw-Fs8">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="VnA-Ee-Imh">
                                                 <rect key="frame" x="320" y="0.0" width="39" height="44"/>
@@ -202,5 +229,10 @@
         <image name="btn_03.png" width="39" height="50"/>
         <image name="btn_04 (1).png" width="37" height="46"/>
         <image name="btn_05.png" width="36" height="54"/>
+        <image name="img_003.png" width="147" height="50"/>
+        <image name="img_005.png" width="147" height="50"/>
+        <image name="img_04.png" width="200" height="200"/>
+        <image name="img_06.png" width="994" height="313"/>
+        <image name="img_08.png" width="539" height="457"/>
     </resources>
 </document>
