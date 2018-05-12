@@ -11,6 +11,7 @@ import UIKit
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //配列fruitsを設定
     let fruits = ["apple", "orange", "melon", "banana", "pineapple"]
+    let fruits1 = ["apple", "orange", "melon", "banana", "pineapple"]
     @IBOutlet weak var TableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +52,10 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "SampleCell", for: indexPath)
         
         // セルに表示する値を設定する
+        tableView.rowHeight = 200
         cell.textLabel!.text = fruits[indexPath.row]
+        cell.detailTextLabel?.text = fruits1[indexPath.row]
+        cell.imageView?.image = UIImage(named: "pic_04.jpg")
         
         return cell
     }

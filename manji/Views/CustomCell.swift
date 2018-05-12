@@ -2,7 +2,7 @@
 //  CustomCell.swift
 //  manji
 //
-//  Created by 池田俊輝 on 2018/05/12.
+//  Created by 池田俊輝 on 2018/05/13.
 //  Copyright © 2018年 会津慎弥. All rights reserved.
 //
 
@@ -20,5 +20,5 @@ class CustomCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

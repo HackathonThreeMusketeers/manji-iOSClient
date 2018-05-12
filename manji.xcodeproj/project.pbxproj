@@ -20,6 +20,7 @@
 		5EEED02EE5187BC41861E66D /* Pods_manjiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1763A3712EB48A9106E2B4 /* Pods_manjiTests.framework */; };
 		8F72A87320A6D09A00FC09DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F72A87220A6D09A00FC09DB /* DetailViewController.swift */; };
 		8F72A87520A6D96E00FC09DB /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F72A87420A6D96E00FC09DB /* NewViewController.swift */; };
+		8F72A88520A75AD300FC09DB /* pic_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8F72A88420A75AD300FC09DB /* pic_04.jpg */; };
 		C38B255259268D5530624D0A /* Pods_manjiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2A8DD32ECA1F49BE03B5E0 /* Pods_manjiUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		4842AE24E264359CE9A587E4 /* Pods-manjiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manjiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-manjiTests/Pods-manjiTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F72A87220A6D09A00FC09DB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8F72A87420A6D96E00FC09DB /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		8F72A88420A75AD300FC09DB /* pic_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pic_04.jpg; path = ../../../../../Downloads/pic_04.jpg; sourceTree = "<group>"; };
 		AFEE13AA61F50838F45E9862 /* Pods-manji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-manji/Pods-manji.debug.xcconfig"; sourceTree = "<group>"; };
 		BA2A8DD32ECA1F49BE03B5E0 /* Pods_manjiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_manjiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E011BFD7BA9CC3B772D962CC /* Pods-manjiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manjiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-manjiUITests/Pods-manjiUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		0DDE38C920A6C4CB001E7998 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8F72A88420A75AD300FC09DB /* pic_04.jpg */,
 				0DDE389C20A6BFA6001E7998 /* ViewController.swift */,
 				8F72A87220A6D09A00FC09DB /* DetailViewController.swift */,
 				8F72A87420A6D96E00FC09DB /* NewViewController.swift */,
@@ -302,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F72A88520A75AD300FC09DB /* pic_04.jpg in Resources */,
 				0DDE38A520A6BFA7001E7998 /* LaunchScreen.storyboard in Resources */,
 				0DDE38A220A6BFA7001E7998 /* Assets.xcassets in Resources */,
 				0DDE38A020A6BFA6001E7998 /* Main.storyboard in Resources */,
