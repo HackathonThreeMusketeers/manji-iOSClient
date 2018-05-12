@@ -29,14 +29,13 @@ class NewViewController: UIViewController {
         self.present(second, animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func go_detail(_ sender: Any) {
+        //まずは、同じstororyboard内であることをここで定義します
+        let storyboard: UIStoryboard = self.storyboard!
+        //ここで移動先のstoryboardを選択(今回の場合は先ほどsecondと名付けたのでそれを書きます)
+        let second = storyboard.instantiateViewController(withIdentifier: "detail")
+        //ここが実際に移動するコードとなります
+        self.present(second, animated: true, completion: nil)
     }
-    */
-
+    
 }
