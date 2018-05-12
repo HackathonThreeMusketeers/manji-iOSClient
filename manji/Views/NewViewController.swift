@@ -9,7 +9,10 @@
 import UIKit
 
 class NewViewController: UIViewController {
-
+    
+    let imageBag = UIImageView()
+    var labelX = 0
+    var labelY = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 

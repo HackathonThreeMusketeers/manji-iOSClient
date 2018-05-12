@@ -7,17 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    //配列fruitsを設定
     
-    let fruits = ["apple", "orange", "melon", "banana", "pineapple"]
-    let fruits1 = ["apple", "orange", "melon", "banana", "pineapple"]
-    
-    var temp = [String]()
-    var day = [Date]()
-    
-    
+    var diary: [Diary]?
+    let disposeBag = DisposeBag()
     
     @IBOutlet weak var TableView: UITableView!
     @IBOutlet weak var backbutton: UIButton!
@@ -25,7 +20,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getDiary()
         // Do any additional setup after loading the view.
     }
 
@@ -34,6 +29,20 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func getDiary() {
+        let api = Api.getDiary()
+        let request: Observable<[Diary]> = ApiClient.get(api: api, headers: nil)
+        request.subscribe(
+            onNext: { (diary) in
+                self.diary = diary
+                self.loadView()
+        },
+            onError: { (error) in
+                print(error)
+        })
+            .disposed(by: disposeBag)
+    }
     
     @IBAction func back(_ sender: Any) {
         //まずは、同じstororyboard内であることをここで定義します
@@ -54,7 +63,13 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruits.count
+        
+        let count = 0
+        if diary != nil {
+            return self.diary!.count
+        }
+        
+        return count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,9 +78,9 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // セルに表示する値を設定する
         tableView.rowHeight = 200
-        cell.textLabel!.text = fruits[indexPath.row]
-        cell.detailTextLabel?.text = fruits1[indexPath.row]
-        cell.imageView?.image = UIImage(named: "pic_04.jpg")
+        cell.textLabel!.text = diary![indexPath.row].date
+        cell.detailTextLabel?.text = diary![indexPath.row].temperature
+        cell.imageView?.image = diary![indexPath.row].getThumbImg()
         
         return cell
     }

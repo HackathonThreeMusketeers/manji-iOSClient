@@ -25,7 +25,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sde-97-Ca1">
                                 <rect key="frame" x="-1" y="421" width="372" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="日記" image="btn_01.png"/>
+                                <state key="normal" title="日記" image="btn_02.png"/>
                                 <connections>
                                     <action selector="detail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAG-RI-0mz"/>
                                 </connections>
@@ -33,7 +33,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhq-Jr-8md">
                                 <rect key="frame" x="2" y="525" width="370" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="今" image="btn_02.png"/>
+                                <state key="normal" title="今" image="btn_01.png"/>
                                 <connections>
                                     <action selector="now:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c6Q-ih-sAG"/>
                                 </connections>
@@ -73,11 +73,11 @@
                                 <color key="barTintColor" red="0.75686274509999996" green="0.47058823529999999" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="ごはん" id="gTA-jd-BaV">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Nhq-18-xnp">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bhB-6e-FqT">
-                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="Nhq-18-xnp">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bhB-6e-FqT">
+                                                <rect key="frame" x="16" y="0.0" width="36" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="戻る">
+                                                <state key="normal" image="btn_05.png">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -86,10 +86,10 @@
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="K7N-2t-WCb">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xc0-0u-ctM">
-                                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xc0-0u-ctM">
+                                                <rect key="frame" x="322" y="0.0" width="37" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="きろく">
+                                                <state key="normal" image="btn_04 (1).png">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -100,11 +100,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvB-cc-PC8">
-                                <rect key="frame" x="141" y="492" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="餌やりボタン"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lJ1-re-9If"/>
@@ -129,21 +124,21 @@
                                 <items>
                                     <navigationItem title="きろく" id="7Nw-ub-L7w">
                                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="I3U-nC-4A1">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="tJj-Rg-P3j">
-                                                <rect key="frame" x="16" y="0.0" width="71" height="44"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="tJj-Rg-P3j">
+                                                <rect key="frame" x="16" y="0.0" width="36" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                                <state key="normal" title="戻る"/>
+                                                <state key="normal" image="btn_05.png"/>
                                                 <connections>
                                                     <action selector="back:" destination="hI0-Gc-Qbf" eventType="touchUpInside" id="Ry7-hO-Ios"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="YhJ-jw-Fs8">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="VnA-Ee-Imh">
-                                                <rect key="frame" x="287" y="0.0" width="72" height="44"/>
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="VnA-Ee-Imh">
+                                                <rect key="frame" x="320" y="0.0" width="39" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="ご飯"/>
+                                                <state key="normal" image="btn_03.png"/>
                                                 <connections>
                                                     <action selector="now_go:" destination="hI0-Gc-Qbf" eventType="touchUpInside" id="5uw-Ju-wAL"/>
                                                 </connections>
@@ -204,5 +199,8 @@
         <image name="bg_top.png" width="1315" height="2282"/>
         <image name="btn_01.png" width="836" height="181"/>
         <image name="btn_02.png" width="838" height="172"/>
+        <image name="btn_03.png" width="39" height="50"/>
+        <image name="btn_04 (1).png" width="37" height="46"/>
+        <image name="btn_05.png" width="36" height="54"/>
     </resources>
 </document>
