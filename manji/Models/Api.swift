@@ -11,29 +11,27 @@ import ObjectMapper
 
 enum Api: API {
     
-    //case createProject(projectName: String, contentType: String)
+    case getDiary()
     
     var buildURL: URL {
         return URL(string: "\(baseURL)\(path)")!
     }
     
     var baseURL: String {
-        return ""
+        return "http://ec2-18-191-25-206.us-east-2.compute.amazonaws.com:3000"
     }
     
     var path: String {
         switch self {
-        //case .createProject(projectName: _, contentType: _):    return "/projects.json"
+        case .getDiary(): return "/diary"
         }
     }
     
     var parameters: Parameters {
         var params  = [String: Any]()
         switch self {
-        /*case .createProject(projectName: let projectName, contentType: let contentType):
-            params[Constant.ProjectKeys().name] = projectName
-            params[Constant.ProjectKeys().contentType] = contentType
-            return params*/
+        case .getDiary():
+            return params
         }
     }
     
