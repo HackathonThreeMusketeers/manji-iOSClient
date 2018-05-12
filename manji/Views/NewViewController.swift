@@ -29,7 +29,7 @@ class NewViewController: UIViewController {
         self.present(second, animated: true, completion: nil)
     }
     
-    @IBAction func go_detail(_ sender: Any) {
+    @IBAction func detail(_ sender: Any) {
         //まずは、同じstororyboard内であることをここで定義します
         let storyboard: UIStoryboard = self.storyboard!
         //ここで移動先のstoryboardを選択(今回の場合は先ほどsecondと名付けたのでそれを書きます)
@@ -37,5 +37,6 @@ class NewViewController: UIViewController {
         //ここが実際に移動するコードとなります
         self.present(second, animated: true, completion: nil)
     }
+    
     
 }

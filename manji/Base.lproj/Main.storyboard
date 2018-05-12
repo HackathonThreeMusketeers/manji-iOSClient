@@ -78,10 +78,10 @@
                                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="日記"/>
+                                                <connections>
+                                                    <action selector="detail:" destination="iPj-K6-TyP" eventType="touchUpInside" id="zLi-R3-wYF"/>
+                                                </connections>
                                             </button>
-                                            <connections>
-                                                <action selector="go_detail:" destination="iPj-K6-TyP" id="LyT-UZ-gkN"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
