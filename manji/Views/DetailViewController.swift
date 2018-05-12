@@ -10,9 +10,19 @@ import UIKit
 
 class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //配列fruitsを設定
+    
     let fruits = ["apple", "orange", "melon", "banana", "pineapple"]
     let fruits1 = ["apple", "orange", "melon", "banana", "pineapple"]
+    
+    var temp = [String]()
+    var day = [Date]()
+    
+    
+    
     @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var backbutton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
