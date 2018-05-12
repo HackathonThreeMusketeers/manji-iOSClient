@@ -8,8 +8,10 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
-
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    //配列fruitsを設定
+    let fruits = ["apple", "orange", "melon", "banana", "pineapple"]
+    @IBOutlet weak var TableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,6 +40,20 @@ class DetailViewController: UIViewController {
         let second = storyboard.instantiateViewController(withIdentifier: "now")
         //ここが実際に移動するコードとなります
         self.present(second, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return fruits.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // セルを取得する
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "SampleCell", for: indexPath)
+        
+        // セルに表示する値を設定する
+        cell.textLabel!.text = fruits[indexPath.row]
+        
+        return cell
     }
     
     
