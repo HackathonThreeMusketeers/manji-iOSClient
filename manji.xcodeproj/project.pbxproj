@@ -18,6 +18,7 @@
 		0DDE38D920A6C7BD001E7998 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE38D720A6C7BD001E7998 /* Api.swift */; };
 		1009357754D8662B4B7022BE /* Pods_manji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16D49F998D9787473F3433E7 /* Pods_manji.framework */; };
 		5EEED02EE5187BC41861E66D /* Pods_manjiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1763A3712EB48A9106E2B4 /* Pods_manjiTests.framework */; };
+		8F72A87320A6D09A00FC09DB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F72A87220A6D09A00FC09DB /* DetailViewController.swift */; };
 		C38B255259268D5530624D0A /* Pods_manjiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2A8DD32ECA1F49BE03B5E0 /* Pods_manjiUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		2127F261E27CA2F85BE9BADA /* Pods-manjiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manjiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-manjiUITests/Pods-manjiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		24C9AA1A316C24BE6D0DC7F4 /* Pods-manji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manji.release.xcconfig"; path = "Pods/Target Support Files/Pods-manji/Pods-manji.release.xcconfig"; sourceTree = "<group>"; };
 		4842AE24E264359CE9A587E4 /* Pods-manjiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manjiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-manjiTests/Pods-manjiTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F72A87220A6D09A00FC09DB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AFEE13AA61F50838F45E9862 /* Pods-manji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-manji/Pods-manji.debug.xcconfig"; sourceTree = "<group>"; };
 		BA2A8DD32ECA1F49BE03B5E0 /* Pods_manjiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_manjiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E011BFD7BA9CC3B772D962CC /* Pods-manjiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-manjiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-manjiUITests/Pods-manjiUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				0DDE389C20A6BFA6001E7998 /* ViewController.swift */,
+				8F72A87220A6D09A00FC09DB /* DetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 			files = (
 				0DDE389D20A6BFA6001E7998 /* ViewController.swift in Sources */,
 				0DDE389B20A6BFA6001E7998 /* AppDelegate.swift in Sources */,
+				8F72A87320A6D09A00FC09DB /* DetailViewController.swift in Sources */,
 				0DDE38D920A6C7BD001E7998 /* Api.swift in Sources */,
 				0DDE38D820A6C7BD001E7998 /* ApiClient.swift in Sources */,
 			);
