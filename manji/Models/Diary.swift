@@ -27,7 +27,7 @@ struct Diary: Mappable {
         
         var image = UIImage()
         
-        let url = URL(string: imageURL)!
+        let url = URL(string: "http://ec2-18-191-25-206.us-east-2.compute.amazonaws.com:3000/images/" + imageURL)!
         let imageData = try? Data(contentsOf: url)
         image = UIImage(data: imageData!)!
         
