@@ -12,6 +12,7 @@ import ObjectMapper
 enum Api: API {
     
     case getDiary()
+    case putEsa()
     
     var buildURL: URL {
         return URL(string: "\(baseURL)\(path)")!
@@ -24,6 +25,7 @@ enum Api: API {
     var path: String {
         switch self {
         case .getDiary(): return "/diary"
+        case .putEsa: return "/esa"
         }
     }
     
@@ -31,6 +33,8 @@ enum Api: API {
         var params  = [String: Any]()
         switch self {
         case .getDiary():
+            return params
+        case .putEsa():
             return params
         }
     }
