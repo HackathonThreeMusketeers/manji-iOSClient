@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let image11 = UIImage(named: "img_02.png")
+        let image22 = UIImage(named: "img_01.png")
+        
+        image1.image = image11
+        image2.image = image22
         
     }
 
