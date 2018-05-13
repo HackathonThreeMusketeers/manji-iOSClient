@@ -7,15 +7,24 @@
 //
 
 import UIKit
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var player: AVAudioPlayer?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let sound = NSDataAsset(name: "sound") {
+            player = try? AVAudioPlayer(data: sound.data)
+            player?.play() // → これで音が鳴る
+        }
+        
+        sleep(3)
+        
         return true
     }
 
