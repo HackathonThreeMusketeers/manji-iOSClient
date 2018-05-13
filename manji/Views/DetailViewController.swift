@@ -82,7 +82,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
         cell.textLabel!.text = diary![indexPath.row].date
         cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 20)
-        cell.detailTextLabel?.text = "室温"+diary![indexPath.row].temperature+"度"
+        cell.detailTextLabel?.text = "水温"+diary![indexPath.row].temperature+"度"
         
         
         return cell
