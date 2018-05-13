@@ -13,8 +13,7 @@ class NewViewController: UIViewController {
     
     let imageBag = UIImageView()
     let disposeBag = DisposeBag()
-
-    
+    var flag = false
     var imy = 128
     
     override func viewDidLoad() {
@@ -74,11 +73,10 @@ class NewViewController: UIViewController {
         
         self.view.addSubview(imageBag)
         
-        if(newDy<300){
+        if(newDy<300 && !flag){
             imageBag.frame = CGRect(x:0, y:100000, width:128, height:imy)
-            
-            putEsa()
-            
+            flag = true
+            self.putEsa()
         }
         //print(newDy)
     }
@@ -96,14 +94,15 @@ class NewViewController: UIViewController {
                 //result = response.result
                 
                 let alertController = UIAlertController(title: "ありがとうにゃ",message: "おいしいにゃ", preferredStyle: UIAlertControllerStyle.alert)
-                
+
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default){ (action: UIAlertAction) in
                     //        ②-2 OKがクリックされた時の処理
                     print("Hello")
                 }
-                    
+
                 alertController.addAction(okAction)
                 self.present(alertController,animated: true,completion: nil)
+            print("あ")
         },
             onError: { (error) in
                 print("error")
