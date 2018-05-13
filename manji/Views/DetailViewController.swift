@@ -78,9 +78,12 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         // セルに表示する値を設定する
         tableView.rowHeight = 200
-        cell.textLabel!.text = diary![indexPath.row].date
-        cell.detailTextLabel?.text = diary![indexPath.row].temperature
         cell.imageView?.image = diary![indexPath.row].getThumbImg()
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 20)
+        cell.textLabel!.text = diary![indexPath.row].date
+        cell.detailTextLabel?.font = UIFont.systemFont(ofSize: 20)
+        cell.detailTextLabel?.text = "室温"+diary![indexPath.row].temperature+"度"
+        
         
         return cell
     }

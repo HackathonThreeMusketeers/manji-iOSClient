@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class NewViewController: UIViewController {
     
     let imageBag = UIImageView()
+    let disposeBag = DisposeBag()
 
     
     var imy = 128
@@ -43,7 +45,7 @@ class NewViewController: UIViewController {
     
     // 画面にタッチで呼ばれる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("touchesBegan")
+        //print("touchesBegan")
         
     }
     
@@ -74,14 +76,41 @@ class NewViewController: UIViewController {
         
         if(newDy<300){
             imageBag.frame = CGRect(x:0, y:100000, width:128, height:imy)
+            
+            putEsa()
+            
         }
-        print(newDy)
+        //print(newDy)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func putEsa() {
+        let api = Api.putEsa()
+        let request: Observable<ResultEsa> = ApiClient.get(api: api, headers: nil)
+        request.subscribe(
+            onNext: { (response) in
+                //result = response.result
+                
+                let alertController = UIAlertController(title: "ありがとうにゃ",message: "おいしいにゃ", preferredStyle: UIAlertControllerStyle.alert)
+                
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default){ (action: UIAlertAction) in
+                    //        ②-2 OKがクリックされた時の処理
+                    print("Hello")
+                }
+                    
+                alertController.addAction(okAction)
+                self.present(alertController,animated: true,completion: nil)
+        },
+            onError: { (error) in
+                print("error")
+        })
+            .disposed(by: disposeBag)
+    }
+    
     @IBAction func back(_ sender: Any) {
         //まずは、同じstororyboard内であることをここで定義します
         let storyboard: UIStoryboard = self.storyboard!
